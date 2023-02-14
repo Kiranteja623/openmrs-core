@@ -5,7 +5,7 @@ pool:
 trigger:
   - main
 steps:
-  - task: Maven@4
+  - task: Maven@3
     inputs:
       mavenPOMFile: 'pom.xml' 
       testResultsFiles: '**/surefire-reports/TEST-*.xml'
