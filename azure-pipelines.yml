@@ -1,0 +1,13 @@
+---
+pool: 
+  name: Azure Pipelines
+  Vmimage: 'ubuntu-latest'
+trigger:
+  - main
+steps:
+  - task: Maven@4
+    inputs:
+      mavenPOMFile: 'pom.xml' 
+      testResultsFiles: '**/surefire-reports/TEST-*.xml'
+      JDKVersion: '1.17'
+      goals: 'clean package'
