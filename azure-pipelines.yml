@@ -3,7 +3,7 @@ pool:
   name: Default
   Vmimage: 'ubuntu-20.04'
 trigger:
-  - main
+  - master
 steps:
   - script: sudo apt update
   - script: sudo apt install openjdk-11-jdk -y
