@@ -1,6 +1,6 @@
 ---
 pool: 
-  name: Default
+  name: 'Default'
   Vmimage: 'ubuntu-20.04'
 trigger:
   - master
