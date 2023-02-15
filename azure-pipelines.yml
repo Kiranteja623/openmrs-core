@@ -1,6 +1,6 @@
 ---
 pool: 
-  name: 'Azure pipeline'
+  name: 'Azure Pipelines'
   Vmimage: 'ubuntu-20.04'
 trigger:
   - master
